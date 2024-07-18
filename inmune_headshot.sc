@@ -15,8 +15,7 @@ GET_PLAYER_CHAR 0 scplayer
 // Obtener peds/personajes cerca del player, en un radio de: 500
 CONST_FLOAT radius 500.0
 IF ARE_ANY_CHARS_NEAR_CHAR scplayer, radius
-    // Si hay peatones cerca
-    // PRINT_STRING_NOW "Hay peatones cerca", 1000
+    // PRINT_STRING_NOW "Si hay peatones cerca", 1000
     
     // Coordenadas de player
     LVAR_FLOAT x, y, z
@@ -34,8 +33,8 @@ IF ARE_ANY_CHARS_NEAR_CHAR scplayer, radius
         WAIT 0
     ENDIF
 ELSE
-    // No hay peatones cerca, no hacer nada
-    PRINT_STRING_NOW "No hay peatones cerca", 1000
+    // PRINT_STRING_NOW "No hay peatones cerca, no hacer nada", 1000
+    WAIT 0
 ENDIF
 
 
